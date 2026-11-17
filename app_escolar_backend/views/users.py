@@ -1,6 +1,5 @@
 from django.db.models import *
 from django.db import transaction
-from app_escolar_backend.serializers import UserSerializer
 from app_escolar_backend.serializers import *
 from app_escolar_backend.models import *
 from rest_framework import permissions

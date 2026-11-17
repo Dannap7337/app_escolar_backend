@@ -19,7 +19,12 @@ class AdminSerializer(serializers.ModelSerializer):
 class MaestrosSerializer(serializers.ModelSerializer):
     user=UserSerializer(read_only=True)
     class Meta:
-        model = Administradores
+        model = Maestros
         field = '__all__'
 
-# TODO: Agregar serializers para alumnos
+# Definimos serializer para alumnos
+class AlumnosSerializer(serializers.ModelSerializer):
+    user=UserSerializer(read_only=True)
+    class Meta:
+        model = Alumnos
+        field = '__all__'

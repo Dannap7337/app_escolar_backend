@@ -5,7 +5,7 @@ from app_escolar_backend.models import *
 
 @admin.register(Administradores)
 @admin.register(Maestros)
-# TODO: Agregar Alumno
+@admin.register(Alumnos)
 
 class ProfilesAdmin(admin.ModelAdmin):
     list_display = ("id", "user", "creation", "update")
